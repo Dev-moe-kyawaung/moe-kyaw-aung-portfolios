@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --cyber-black: #0a0a0f;
+  --cyber-dark: #1a1a2e;
+  --cyber-purple: #9d4edd;
+  --cyber-pink: #ff006e;
+  --cyber-blue: #00f5ff;
+  --cyber-green: #00ff88;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--cyber-black);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cyber-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--cyber-purple), var(--cyber-pink));
+  border-radius: 4px;
+}
+
+.glass {
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(157, 78, 221, 0.3);
+  border-radius: 16px;
+}
+
+.neon-text-blue {
+  text-shadow: 0 0 10px #00f5ff, 0 0 20px #00f5ff;
+}
+
+.neon-text-pink {
+  text-shadow: 0 0 10px #ff006e, 0 0 20px #ff006e;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #9d4edd, #ff006e, #00f5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
